@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Needit" max_length="40" name="x_58872_needit_needit" sizeclass="0" type="collection">
+        <element label="New Field 1" max_length="40" name="new_field_1" type="integer"/>
+        <element label="new field 2" max_length="40" name="new_field_2" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Reqested Type" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="human resource" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Your Department" sequence="3" value="your_choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="hr1" label="What needed" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="human resouces 1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="1" value="legal 1"/>
+                <element inactive_on_update="false" label="Facilities 1" sequence="2" value="facilities 1"/>
+                <element inactive_on_update="false" label="Your Department choice 1" sequence="3" value="your_choice1"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="when needed" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+    </element>
+</database>
